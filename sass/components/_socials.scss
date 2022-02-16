@@ -1,0 +1,61 @@
+.section-team-socials-item + .section-team-socials-item {
+  margin-left: 10px;
+}
+.section-team-socials {
+  display: flex;
+  justify-content: center;
+}
+.section-team-socials-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(175, 177, 184, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+}
+
+.section-team-socials-icon {
+  fill: currentColor;
+}
+
+.join-section-list {
+  display: flex;
+  justify-content: center;
+}
+.join-section-item + .join-section-item {
+  margin-left: 10px;
+}
+.join-section-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+}
+.join-section-icon {
+  fill: currentColor;
+}
