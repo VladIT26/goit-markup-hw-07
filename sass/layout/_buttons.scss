@@ -1,10 +1,10 @@
-.buttons-list {
+.buttons {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
-.button-item {
+.buttons__item {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -29,6 +29,6 @@
   }
 }
 
-.button-list-flex:not(:last-child) {
+.buttons__list-flex:not(:last-child) {
   margin-right: 8px;
 }

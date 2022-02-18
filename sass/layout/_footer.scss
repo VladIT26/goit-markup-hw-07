@@ -3,37 +3,37 @@
   padding: 60px 0;
 }
 
-.footer-cont {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
-.contacts-container {
-  flex-grow: 1;
-}
-.join-container {
-  margin-left: 70px;
-}
-.footer-link {
-  text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
-}
-.footer-part {
+.footer-logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: var(--primary-white-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
+
+.contacts {
+  flex-grow: 1;
+}
+.join {
+  margin-left: 70px;
+}
+
 .address {
   display: block;
 }
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.main-address {
+.address__main {
   font-style: normal;
   text-decoration: none;
   color: var(--primary-white-color);
@@ -48,7 +48,7 @@
   }
 }
 
-.secondary-address {
+.address__secondary {
   font-style: normal;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -61,7 +61,7 @@
     color: var(--accent-color);
   }
 }
-.thirdly-address {
+.address__thirdly {
   font-style: normal;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -74,8 +74,7 @@
     color: var(--accent-color);
   }
 }
-
-.join-section {
+.join__title {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -84,12 +83,43 @@
   color: #ffffff;
   margin-bottom: 20px;
 }
-.email-container {
+
+.join__list {
+  display: flex;
+  justify-content: center;
+}
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+.join__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+}
+.join__icon {
+  fill: currentColor;
+}
+.email {
   margin-left: 93px;
   width: 570px;
 }
 
-.email-title {
+.email__title {
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -98,7 +128,7 @@
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-.email-input {
+.email__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,25 +137,4 @@
   background-color: #2f303a;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
-}
-.email-btn {
-  margin-left: 8px;
-  width: 200px;
-  height: 50px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: var(--secondary-bgc);
-  border: transparent;
-}
-
-.email-icon-send {
-  margin-left: 10px;
 }

@@ -1,15 +1,23 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.main-nav {
+.main-navigation {
   display: flex;
   align-items: center;
+}
+.header-logo {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
-.link {
+.site-nav__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -44,7 +52,7 @@
   display: flex;
   margin-left: 92px;
 }
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 .auth-nav {
@@ -52,10 +60,10 @@
   margin-left: auto;
 }
 
-.auth-nav-item:not(:last-child) {
+.auth-nav__item:not(:last-child) {
   margin-right: 30px;
 }
-.auth-link {
+.auth-nav__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +81,7 @@
     color: var(--accent-color);
   }
 }
-.auth-link-icon {
+.auth-nav__icon {
   margin-right: 10px;
   fill: currentColor;
 }

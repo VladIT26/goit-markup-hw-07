@@ -7,6 +7,7 @@
 @import "./components/logo";
 @import "./components/section";
 @import "./layout/hero";
+@import "./components/hero-button";
 @import "./layout/features";
 @import "./layout/work";
 @import "./layout/team";
@@ -15,4 +16,6 @@
 @import "./layout/buttons";
 @import "./layout/projects";
 @import "./layout/footer";
+@import "./components/email-button.scss";
 @import "./components/modal";
+@import "./components/send-button";
