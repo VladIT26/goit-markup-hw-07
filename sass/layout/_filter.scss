@@ -1,10 +1,10 @@
-.buttons {
+.filter {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
-.buttons__item {
+.filter__buttons {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -29,6 +29,6 @@
   }
 }
 
-.buttons__list-flex:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }

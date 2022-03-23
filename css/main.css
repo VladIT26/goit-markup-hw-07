@@ -57,12 +57,12 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
-.main-navigation {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.logo {
   color: var(--primary-text-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -94,11 +94,11 @@ button {
   color: var(--accent-color);
 }
 
-.current {
+.site-nav__link__current {
   color: var(--accent-color);
 }
 
-.current::after {
+.site-nav__link__current::after {
   content: "";
   position: absolute;
   display: block;
@@ -151,7 +151,7 @@ button {
   fill: currentColor;
 }
 
-.part {
+.logo__part {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -164,6 +164,15 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .hero {
@@ -193,7 +202,7 @@ button {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   color: var(--primary-white-color);
   background-color: #2196f3;
   font-weight: 700;
@@ -208,7 +217,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -220,7 +229,7 @@ button {
   margin-right: 30px;
 }
 
-.features__logo {
+.features__box {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -246,32 +255,23 @@ button {
   letter-spacing: 0.03em;
 }
 
-.work {
+.section__work {
   padding-top: 0;
 }
 
-.work__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.work__list {
+.work {
   display: flex;
 }
 
-.work__img {
+.work__item {
   position: relative;
 }
 
-.work__img:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work__item {
+.work__text {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -288,21 +288,11 @@ button {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.team {
+.section__other-background {
   background-color: #f5f4fa;
 }
 
-.team__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
-}
-
-.team__list {
+.team {
   display: flex;
 }
 
@@ -320,7 +310,7 @@ button {
   padding: 30px 0;
 }
 
-.team__name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 19 / 16;
@@ -330,7 +320,7 @@ button {
   margin-bottom: 10px;
 }
 
-.team__profession {
+.team__description {
   font-weight: normal;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -354,7 +344,7 @@ button {
   justify-content: center;
 }
 
-.socials-link {
+.socials__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -363,26 +353,17 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link:hover, .socials-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: #2196f3;
   color: white;
   border-radius: 50%;
 }
 
-.socials-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.clients__title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
-}
-
-.clients__list {
+.clients {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,13 +395,13 @@ button {
   color: currentColor;
 }
 
-.buttons {
+.filter {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
-.buttons__item {
+.filter__buttons {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -436,13 +417,13 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons__item:hover, .buttons__item:focus {
+.filter__buttons:hover, .filter__buttons:focus {
   background-color: var(--accent-color);
   color: var(--secondary-bgc);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.buttons__list-flex:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -453,7 +434,7 @@ button {
   margin-bottom: -30px;
 }
 
-.projects__list {
+.projects__item {
   width: calc((100% / 3) - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -508,7 +489,7 @@ button {
   margin-bottom: 4px;
 }
 
-.projects__item {
+.projects__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

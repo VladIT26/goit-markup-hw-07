@@ -1,11 +1,11 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.main-navigation {
+.header__container {
   display: flex;
   align-items: center;
 }
-.header-logo {
+.logo {
   color: var(--primary-text-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -34,7 +34,7 @@
     color: var(--accent-color);
   }
 }
-.current {
+.site-nav__link__current {
   color: var(--accent-color);
   &::after {
     content: "";
